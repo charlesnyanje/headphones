@@ -81,3 +81,39 @@ html {
   margin-top: 40px;
   font-size: 1.2rem;
 }
+.what__we-do {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.what__we-dotxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+}
+.what__we-do-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  gap: 2rem;
+}
+.sound__frequecy {
+  margin-top: 2.7rem;
+}
+.video__img {
+  margin-top: 2rem;
+}
+.music__img {
+  margin-top: 3rem;
+}
+.hearing__img {
+  margin-top: 3rem;
+}
