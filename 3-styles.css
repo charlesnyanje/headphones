@@ -148,45 +148,47 @@ html {
   margin-top: 221px;
   font-size: 1.2rem;
 }
-.results__img{
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  align-items:center;
+.results__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-top: 50px;
   gap: 3rem;
 }
-.contact__form-container{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+.contact__form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
 }
-.form{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 50px;
   gap: 1rem;
 }
-input{
-  border:none;
-  border-bottom: 1px solid  #979797;
+input {
+  border: none;
+  border-bottom: 1px solid #979797;
   width: 335px;
   height: 28px;
   font-size: 1rem;
   color: #071629;
-  background-color:#ffffff;
+  background-color: #ffffff;
   outline: none;
 }
-.name__input,.email__input,.message__textarea{
+.name__input,
+.email__input,
+.message__textarea {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
-.form__btn{
+.form__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,55 +197,135 @@ input{
   width: 162px;
   height: 44px;
   border-radius: 4rem;
-  margin-top:40px;
+  margin-top: 40px;
   background-color: #ff6565;
   color: #ffffff;
   font-size: 0.8rem;
   border: none;
   cursor: pointer;
 }
-footer{
+footer {
   background: url("./images/footer_background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height:249px;
+  height: 249px;
   color: #ffffff;
   margin-top: 120px;
 }
-.footer__logo{
-  display:flex;
-  justify-content:flex-start;
-  align-items:center;
+.footer__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   position: relative;
 }
-.footer__logo img{
+.footer__logo img {
   margin-left: 199.61px;
   position: absolute;
-  top:91.76px;
-  
+  top: 91.76px;
 }
-.socials{
-  display:flex;
-  justify-content:flex-end;
+.socials {
+  display: flex;
+  justify-content: flex-end;
   flex-direction: row;
-  align-items:center;
+  align-items: center;
   margin-top: 30px;
   gap: 1rem;
   position: relative;
-
 }
-.socials img{
-margin-top: 84px;
+.socials img {
+  margin-top: 84px;
 
-margin-right: 80px;
+  margin-right: 80px;
 }
-.footer__copyright{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 40px;
   font-size: 1rem;
   margin-bottom: 40px;
+}
+/* responsive screen for tablets */
+@media only screen and (min-width: 768px) {
+  header {
+    width: 100vw;
+  }
+  .header {
+    width: 100vw;
+    height: 32px;
+  }
+  .hero__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+  }
+  .hero__logo img {
+    margin-left: 66px;
+    position: absolute;
+    top: 57.76px;
+    width: 13rem;
+  }
+  .nav__links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 404px;
+    width: 335px;
+    height: 15px;
+  }
+  .nav__links a {
+    margin-top: 37px;
+  }
+  .hero__text-2,
+  .what__we-dotxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .what__we-do-imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+  .results__text{
+    margin-top: 170px;
+    font-size: 1.2rem;
+  }
+  .results__img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-left: 150px;
+    margin-top: 130px;
+  }
+  .our__results{
+    height: 876px;
+  }
+  .footer__logo img{
+    margin-left: 60px;
+    position: absolute;
+    top: 91.76px;
+  }
+  .socials{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5px;
+  }
+  .socials img{
+    margin-left: -3rem;
+  }
+  input{
+    width:350px;
+    height: 40px;
+  }
+}
+/*responsive screen for mobile */
+@media only screen and (min-width: 480px){
+  
 }
