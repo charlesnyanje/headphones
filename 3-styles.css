@@ -7,6 +7,10 @@ html {
   margin: 0;
   padding: 0;
 }
+.hamburger__menu {
+  display: none;
+}
+
 .hero__piece {
   background: url("./images/headphones_hero_1.jpg");
   background-size: cover;
@@ -247,10 +251,210 @@ footer {
   font-size: 1rem;
   margin-bottom: 40px;
 }
+
+/*responsive screen for devices less than 480px */
+@media screen and (max-width: 480px) {
+}
+
+/*responsive screen for mobile */
+
+@media only screen and (min-width: 350px) and (max-width: 540px) {
+  *,
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .hero__piece {
+    width: 100vw;
+    height: 867px;
+  }
+  .hero__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .hero__logo img {
+    position: absolute;
+    width: 10rem;
+    top: 57.76px;
+    margin-right: 240px;
+  }
+  .hamburger__menu {
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    z-index: 100;
+  }
+  .hamburger__menu-line-1,
+  .hamburger__menu-line-3 {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px;
+  }
+  .hamburger__menu-line-2 {
+    width: 20px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px;
+  }
+
+  /*rotate first bar */
+  .change .hamburger__menu-line-1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  /*fade out second bar */
+  .change .hamburger__menu-line-2 {
+    opacity: 0;
+  }
+  /*rotate third bar */
+  .change .hamburger__menu-line-3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  .nav__links {
+    display: none;
+  }
+  /*show nav links when hamburger menu is clicked */
+  .show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    gap: 1rem;
+  }
+  .hero__text {
+    margin-top: 150px;
+  }
+  .hero__text span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__text-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 182px;
+    margin: 60px auto;
+  }
+  .what__we-dotxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    flex-wrap: wrap;
+    margin: -17rem auto;
+    height: 979px;
+  }
+  .what__we-do-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -2rem auto;
+  }
+  .sound__frequecy,
+  .video__img,
+  .music__img,
+  .hearing__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .our__results {
+    height: 1491px;
+    width: 100vw;
+  }
+  .results__header h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    font-size: 2rem;
+    width: 266px;
+  }
+  .results__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 180px auto;
+    width: 305px;
+    margin-bottom: 40px;
+  }
+  .results__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .contact__form {
+    width: 100vw;
+  }
+  .contact__form-container {
+    height: 373px;
+    width: 335px;
+    margin: 20px auto;
+  }
+  footer {
+    width: 100vw;
+    height: 249px;
+  }
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__logo img {
+    width: 10rem;
+    margin: -2rem auto;
+  }
+  .socials {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+  }
+  .socials img {
+    position: absolute;
+    top: 25px;
+  }
+  .img__one {
+    margin-left: 2rem;
+  }
+  .img__two {
+    margin-left: -1rem;
+  }
+  .img__three {
+    margin-left: -4rem;
+  }
+  .footer__copyright {
+    margin-top: 11rem;
+  }
+}
+
 /* responsive screen for tablets */
+
 @media only screen and (min-width: 768px) {
   header {
     width: 100vw;
+  }
+  .hamburger__menu {
+    display: none;
   }
   .header {
     width: 100vw;
@@ -325,192 +529,193 @@ footer {
     height: 40px;
   }
 }
-/*responsive screen for mobile */
-@media only screen and (min-width: 400px) {
-  *,
-  body,
-  html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/*responsive screen for desktop */
+@media only screen and (min-width: 992px)  {
+  .hamburger__menu {
+    display: none;
   }
   .hero__piece {
     width: 100vw;
-    height: 867px;
   }
+
   .hero__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 161px;
+    height: 32px;
+    display: block;
     position: relative;
   }
   .hero__logo img {
-    margin-left: 20px auto;
     position: absolute;
-    top: 57.76px;
-    width: 10rem;
-    margin-bottom: 0;
-  }
-  .hamburger__menu {
-    display: inline-block;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 100;
-  }
-  .hamburger__menu-line-1,
-  .hamburger__menu-line-3 {
-    width: 30px;
-    height: 3px;
-    background-color: #ffffff;
-    margin: 5px;
-  }
-  .hamburger__menu-line-2 {
-    width: 20px;
-    height: 3px;
-    background-color: #ffffff;
-    margin: 5px;
-  }
-
-  /*rotate first bar */
-  .change .hamburger__menu-line-1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  /*fade out second bar */
-  .change .hamburger__menu-line-2 {
-    opacity: 0;
-  }
-  /*rotate third bar */
-  .change .hamburger__menu-line-3 {
-    transform: translate(0, -11px) rotate(45deg);
+    top: 42.76px;
+    margin-left: 200.61px;
   }
   .nav__links {
-    display: none;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-left: 946px;
+    margin-top: 37px;
+    align-items: center;
+    height: 15px;
   }
-  /*show nav links when hamburger menu is clicked */
-  .show {
+  .hero__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    margin-left: 20px;
-    margin-bottom: 0;
-    gap: 1rem;
+    margin-top: 327px;
   }
-  .hero__text {
-    margin-top: 150px;
+  .hero__text-1 {
+    margin-top: 20px;
+    font-size: 1.2rem;
   }
-  .hero__text span {
+  .hero__btn {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .hero__btn .btn {
+    width: 162px;
+    height: 44px;
+    margin-top: 30px;
+    border-radius: 4rem;
+    background-color: #ff6565;
+    color: #ffffff;
+    font-size: 0.8rem;
+    border: none;
+    cursor: pointer;
   }
   .hero__text-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 330px;
-    height: 182px;
-    margin: 60px auto;
+    margin-top: 40px;
+    font-size: 1.2rem;
+  }
+  .what__we-do {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
   }
   .what__we-dotxt {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 225px;
-    flex-wrap: wrap;
-    margin: -17rem auto;
-    height: 979px;
+    margin-top: 40px;
+    font-size: 1.2rem;
   }
-  .what__we-do-imgs{
-    display:flex;
-    flex-direction: column;
+  .what__we-do-imgs {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: -2rem auto; 
+    margin-top: 40px;
+    font-size: 1.2rem;
+    gap: 2rem;
   }
-  .sound__frequecy,.video__img,.music__img,.hearing__img{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  .sound__frequecy {
+    margin-top: 2.7rem;
   }
-  .our__results{
-    height:1491px;
-    width: 100vw;
+  .video__img {
+    margin-top: 2rem;
   }
-  .results__header h2{
+  .music__img {
+    margin-top: 3rem;
+  }
+  .hearing__img {
+    margin-top: 3rem;
+  }
+  .results__container {
+  }
+  .our__results {
+    background: url("./images/headphones_hero_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    color: #ffffff;
+    margin-top: 140px;
+  }
+  .results__header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 130px;
-    font-size: 2rem;
-    width: 266px;
+    position: relative;
   }
-  .results__text{
+  .results__header h2 {
+    position: absolute;
+    margin-top: 181px;
+  }
+  .results__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:180px auto;
-    width: 305px;
-    margin-bottom: 40px;
+    margin-top: 221px;
+    font-size: 1.2rem;
   }
-  .results__img{
+  .results__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    gap: 3rem;
+  }
+  .contact__form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 1rem;
+  }
+  input {
+    border: none;
+    border-bottom: 1px solid #979797;
+    width: 335px;
+    height: 28px;
+    font-size: 1rem;
+    color: #071629;
+    background-color: #ffffff;
+    outline: none;
+  }
+  .name__input,
+  .email__input,
+  .message__textarea {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .form__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form__btn .btn {
+    width: 162px;
+    height: 44px;
+    border-radius: 4rem;
+    margin-top: 40px;
+    background-color: #ff6565;
+    color: #ffffff;
+    font-size: 0.8rem;
+    border: none;
+    cursor: pointer;
+  }
+}
 
-  }
-  .contact__form{
-    width: 100vw;
-  }
-.contact__form-container{
-height: 373px;
-width:335px;
-margin:20px auto;
-}
-footer{
-  width: 100vw;
-  height: 249px;
-}
-.footer__logo{
-  display:flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.footer__logo img{
-  width: 10rem;
-  margin:-2rem auto;
-}
-.socials {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  align-items: center;
-}
-.socials img {
- position: absolute;
-  top: 25px;
-}
-.img__one{
-  margin-left: 2rem;
-}
-.img__two{
-  margin-left: -1rem;
-
-}
-.img__three{
-  margin-left: -4rem;
-}
-.footer__copyright{
-  margin-top: 11rem;
-}
-}
