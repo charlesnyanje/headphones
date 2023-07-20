@@ -209,7 +209,49 @@ input {
   border: none;
   cursor: pointer;
 }
+footer {
+  background: url("./images/footer_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 249px;
+  color: #ffffff;
+  margin-top: 120px;
+}
+.footer__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.footer__logo img {
+  margin-left: 199.61px;
+  position: absolute;
+  top: 91.76px;
+}
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  gap: 1rem;
+  position: relative;
+}
+.socials img {
+  margin-top: 84px;
 
+  margin-right: 80px;
+}
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
 
 
 
@@ -366,6 +408,42 @@ input {
     width: 335px;
     margin: 20px auto;
   }
+  footer {
+    width: 100vw;
+    height: 249px;
+  }
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__logo img {
+    width: 10rem;
+    margin: -2rem auto;
+  }
+  .socials {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+  }
+  .socials img {
+    position: absolute;
+    top: 25px;
+  }
+  .img__one {
+    margin-left: 2rem;
+  }
+  .img__two {
+    margin-left: -1rem;
+  }
+  .img__three {
+    margin-left: -4rem;
+  }
+  .footer__copyright {
+    margin-top: 11rem;
+  }
 }
 
 /* responsive screen for tablets */
@@ -429,6 +507,25 @@ input {
   }
   .our__results {
     height: 876px;
+  }
+  .footer__logo img {
+    margin-left: 60px;
+    position: absolute;
+    top: 91.76px;
+  }
+  .socials {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5px;
+  }
+  .socials img {
+    margin-left: -3rem;
+  }
+  input {
+    width: 350px;
+    height: 40px;
   }
 }
 
@@ -620,4 +717,3 @@ input {
     cursor: pointer;
   }
 }
-
