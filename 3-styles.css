@@ -252,9 +252,7 @@ footer {
   margin-bottom: 40px;
 }
 
-/*responsive screen for devices less than 480px */
-@media screen and (max-width: 480px) {
-}
+
 
 /*responsive screen for mobile */
 
